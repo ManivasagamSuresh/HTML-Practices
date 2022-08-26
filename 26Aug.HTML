@@ -1,40 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My first app</title>
-    <link rel="stylesheet" href="index.css">
- <style>
-  .parent{
-background-color: green;
-/* height: 40px; */
-position: relative;
-  }
-  .child2{
-background-color: orange;
-/* top: 20px; */
-height: 20px;
-/* left: 10px; */
-/* position: relative; */
-  }
-  .child1{
-    height: 20px;
-background-color: yellow;
-  }
-  .child3{
-    height: 20px;
-    background-color: blueviolet;
-    top: 10px;
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
 
-    position: relative;
+      <style>
+        .parent{
+      background-color: green;
+      /* height: 40px; */
+      position: relative;
+        }
+        .child2{
+      background-color: orange;
+      /* top: 20px; */
+      height: 20px;
+      /* left: 10px; */
+      /* position: relative; */
+        }
+        .child1{
+          height: 20px;
+      background-color: yellow;
+        }
+        .child3{
+          height: 20px;
+          background-color: blueviolet;
+          top: 10px;
+      
+          position: relative;
+        }
+       </style>
+      </head>
+      <body>
+      <div class="parent">
+         <div class="child1">this is child1</div>
+         <div class="child2">this is child2</div>
+         <div class="child3">this is child3</div>
+      </div>
+
+
+        
+<p id="p1" >Hello mani</p>
+<p id="p2">Hello Mangala</p>
+<p id="p3">Hello Suresh</p>
+<p id="p4">media query</p>
+
+<style>
+  #p1{
+    background-image:linear-gradient(to top right, red,yellow) ;
   }
- </style>
-</head>
-<body>
-<div class="parent">
-   <div class="child1">this is child1</div>
-   <div class="child2">this is child2</div>
-   <div class="child3">this is child3</div>
-</div>
-</body>
+  #p2{
+    background-image: radial-gradient(aqua,violet);
+
+    width: 120px;
+    text-align: center;
+  }
+  #p3{
+    background-image: linear-gradient(12deg,yellow,green);
+    width: 130px;
+  }
+
+  @media screen and (max-width:400px){
+    #p4{
+      background-color: blueviolet;
+    }
+  }
+  </style>
+
+<div class="main1"> I am currently working as a Programmer analyst looking for a better career opportunity.
+
+  I have an experience of 1.8 years in Application Support and maintenance in Insurance domain.
+  
+  My specialties include Microsoft Excel, XML, JAVA, Application management.
+  
+  Eager and willing to learn new technologies and use my experience in a stronger way .
+  
+  If you are interested in contacting me in regards to a position for which my experience and skills would be preferable with your company, please feel free to connect via LinkedIn or contact me directly at bakyapandiarajan@gmail.com</div>
+<br>
+  <div class="main2">I am currently working as a Programmer analyst looking for a better career opportunity.
+
+  I have an experience of 1.8 years in Application Support and maintenance in Insurance domain.
+  
+  My specialties include Microsoft Excel, XML, JAVA, Application management.
+  
+  Eager and willing to learn new technologies and use my experience in a stronger way .
+  
+  If you are interested in contacting me in regards to a position for which my experience and skills would be preferable with your company, please feel free to connect via LinkedIn or contact me directly at bakyapandiarajan@gmail.com</div>
+
+
+<style>
+.main1{
+  background-color: aqua ;
+  height: 100px;
+  overflow: hidden;
+}
+.main2{
+  background-color: aqua ;
+  height: 100px;
+  overflow: scroll;
+}
+
+</style>
+<p class="container" >class container </p>
+<style>
+  .container{
+    background-color: blue;
+  }
+</style>
+    </body>
 </html>
