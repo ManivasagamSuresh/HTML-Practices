@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="parent">
+        <div>first</div>
+        <div>second</div>
+        <div>third</div>
+        <div>first</div>
+        <div>second</div>
+        <div>third</div>
+    </div>
+
+    <style>
+        .parent{
+            display: flex;
+            height: 250px;
+            background-color:green;
+            /* flex-direction: column; */
+            flex-wrap: wrap; 
+            justify-content: flex-end;
+        }
+        .parent>div{
+            background-color: blue;
+            margin: 10px;
+            padding: 20px;
+            font-size: 15px;
+    
+        }
+    </style>
+
+
+<!-- <div class="main">
+    <h1>Hello from GUVI</h1>
+    </div>
+    <style>
+    .main{
+        display : flex ;
+        align-content : center;
+        /*background-color: green;*/
+        flex-wrap: wrap;
+    }
+    .main>h1{
+        font-size:50px;
+    }
+    </style> -->
+
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+    <button type="button" class="btn btn-outline-success">Success</button>
+    <button type="button" class="btn btn-outline-danger">Danger</button>
+    <button type="button" class="btn btn-outline-warning">Warning</button>
+    <button type="button" class="btn btn-outline-info">Info</button>
+    <button type="button" class="btn btn-outline-light">Light</button>
+    <button type="button" class="btn btn-outline-dark">Dark</button>
+
+</body>
+</html>
