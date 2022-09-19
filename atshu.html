@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="">
 </head>
 <body>
-    <P class="hello heading">hello</P>
+    <P class="hello heading" style="position:fixed ;">hello</P>
 <p class="hello"> <q>Lorem ipsum</q> dolor sit amet consectetur adipisicing elit. Atque repellendus quisquam cumque repellat, fuga dolor quas inventore quo nobis amet magni obcaecati sunt autem ducimus? Quia, quibusdam! Est, eius eligendi.</p>
 <!-- Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium magni incidunt unde. Magni, corrupti. Qui fuga ipsam fugit voluptatibus, sint corporis minima quisquam, eligendi dignissimos non quidem obcaecati officia nesciunt! -->
 <h1 id="heading">bakya <div style="color: red;">loves mani</div></h1>
-<h2 id="heading">bakya loves mani</h1>
-<h3>bakya loves mani</h1>
+<h2 id="sticky">bakya loves mani</h2>
+<h3 >bakya loves mani</h1>
 <h4 class="heading">bakya loves mani</h1>
 <h5 class="heading">bakya loves mani</h1>
 <h6 class="heading">bakya loves mani</h1>
@@ -70,6 +70,13 @@
 <!-- tagname,id,class -->
 
 <style>
+#sticky{
+    top: 10px;
+    position: sticky;
+    background-color: blue;
+}
+
+
     /* p{
         color:brown;
         background-color: aqua;
@@ -103,12 +110,6 @@ div{
 </style>
 <p id="important" style="color: blue;">hello</p>
 
-
-</body>
-</html>
-
-
-
 <!-- 
 precedence of CSS
 1.important keyword
@@ -120,3 +121,52 @@ precedence of CSS
 7.less specific external
 
  -->
+ <!-- box-model -->
+ <!-- margin,border,padding -->
+ <div id="box-model-border">hello backya ,you're an angel</div>
+<style>
+    #box-model-border{
+        border: 3px solid black;
+        padding: 10px ;
+        margin: 50px;
+    }
+    
+</style>
+<!-- position -->
+<!--1.static
+    2.relative
+    3.absolute
+    4.fixed
+    5.sticky -->
+
+<div id="parent" style="background-color: blue;">
+   <div class="child1" style="background-color:red ;">hello bakya,im child1</div>
+   <div class="child2" style="background-color:yellow ;">hello bakya,im child2</div> 
+</div>
+<p  id="fixed"style="background-color:brown ; ">im fixed</p>
+
+<style>
+
+    #parent{
+        position: relative;
+    }
+    .child1{
+        position: relative;
+        /* top: 100px; */
+        width: 200px;
+    }
+    .child2{
+        position:absolute;
+        /* left: 100px; */
+        width: 200px;
+        top: 50px;
+    }
+
+</style>
+
+
+</body>
+</html>
+
+
+
