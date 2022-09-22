@@ -9,7 +9,7 @@
 
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container">
         <div class="row">
             <div class="col-4" style="background-color: green;">Hello</div>
             <div class="col-4" style="background-color: yellow;">Hello</div>
@@ -26,6 +26,67 @@
             clearInterval(c)
         },10000)
         </script>
+        <div class="parent">
+            <div class="child1">hello</div>
+            <div class="child2">hello</div>
+            </div>
+        </div>
+        <style>
+            .parent{
+                font-size: 15px;
+                padding: 2em;
+                width: 20%;
+                background-color: blue;
+            }
+            .child1{
+                font-size: 2em;
+                padding: 4em;
+                width: 300px;
+                width:50%;
+                width: 50vw;
+                
+                background-color: green;
+
+            }
+
+        </style> -->
+<p>hello</p>
+<script>
+    // var promise_value= new Promise((res,rej)=>{
+    //     console.log('hello');
+    //     setTimeout(()=>res(" i'm resolved "),3000);
+    //     console.log('mani');
+    // })
+    // console.log(promise_value);
+
+
+    function bar(){
+    return new Promise((res,rej)=>{
+        res('hello');
+    })
+}
+async function foo(){
+    try{
+    let a = await bar();
+    console.log("resolved");
+        document.querySelector('p').innerText="welcome"
+
+}
+    catch(rej){ console.log("reject")}
+}
+foo()
+
+// var a = (color,time)=>{
+//     return new Promise ((res,rej)=>{
+//         setTimeout(()=>{
+//             document.body.style.backgroundColor=color;
+//         },time)
+//         res();
+//     })
+// }
+// a("blue",3000).then(()=>{return a("green",3000)}).then(()=> a("yellow",1000 ))
+</script>
+
 
 </body>
 </html>
