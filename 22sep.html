@@ -60,21 +60,21 @@
     // console.log(promise_value);
 
 
-    function bar(){
-    return new Promise((res,rej)=>{
-        res('hello');
-    })
-}
-async function foo(){
-    try{
-    let a = await bar();
-    console.log("resolved");
-        document.querySelector('p').innerText="welcome"
+//     function bar(){
+//     return new Promise((res,rej)=>{
+//         res('hello');
+//     })
+// }
+// async function foo(){
+//     try{
+//     let a = await bar();
+//     console.log("resolved");
+//         document.querySelector('p').innerText="welcome"
 
-}
-    catch(rej){ console.log("reject")}
-}
-foo()
+// }
+//     catch(rej){ console.log("reject")}
+// }
+// foo()
 
 // var a = (color,time)=>{
 //     return new Promise ((res,rej)=>{
@@ -85,6 +85,34 @@ foo()
 //     })
 // }
 // a("blue",3000).then(()=>{return a("green",3000)}).then(()=> a("yellow",1000 ))
+
+function bar(){
+    return new Promise((res,rej)=>{
+       setTimeout(()=> {res('hello')
+    console.log('mani')
+    },5000);
+       console.log('dummy')
+    })
+}
+async function foo(){
+    try{
+    let a = await bar();
+    console.log(a);
+    console.log("resolved");
+        document.querySelector('p').innerText="welcome"
+
+}
+    catch(rej){ console.log("reject")}
+}
+foo()
+
+
+// let n=new Promise((res,rej)=>{
+//        setTimeout(()=> res('hello'),5000);
+//        console.log('hello')
+//     })
+//     console.log(n);
+
 </script>
 
 

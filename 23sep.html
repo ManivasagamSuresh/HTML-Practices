@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div class="main"><div class="box">hi</div></div>
+    
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 300px;
+            left: 500px;
+            background-color: red;
+            /* align-content: center; */
+            transition: 2s;
+            animation:box;
+            animation-duration: 4s;
+                }
+                @keyframes box{
+                    25%{
+                        transform: translateX(500px);
+                    }
+                    100%{
+                        transform: translateY(100px);
+                    }
+
+                }
+    </style>
+     -->
+<p>hello</p>
+     <script>
+    //    var pr = (color,time)=>{
+    //    return new Promise((res,rej)=>{
+    //         console.log('mani');
+    //         setTimeout(()=>{
+    //             document.querySelector('p').style.color=`${color}`;
+    //         },time);
+    //         console.log('helo')
+    //         res();
+    //     })
+        
+    // }
+    // pr("blue",1000).then(()=>pr("red",2000))
+        
+    var pr1 = new Promise((res,rej)=>{
+        setTimeout(()=>{
+            res('hello')
+        },5000)
+
+    })
+
+
+    console.log(pr1);
+        pr1.then((res)=>{ setTimeout(()=>{document.querySelector("p").style.color="red"},2000) }).then(()=>{
+            setTimeout(()=> {document.querySelector('p').innerHTML="mamaeeeee"},1000)
+        })
+
+     </script>
+</body>
+</html>
